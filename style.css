@@ -1,0 +1,1932 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(rgb(31, 19, 48), rgb(4, 40, 10));
+    color: white;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    overflow:hidden;
+    position: relative;
+}
+.ver{
+    height: 100%;
+    width: 30%;
+    background-color: rgb(100, 182, 168);
+    float: right;
+    border-radius: 70px 0px 0px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.mm{
+    
+    position: absolute;
+    transform: rotate(270deg);
+}
+.mm h1{
+font-size: 130px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+color: white;
+}
+.sec, .fou, .six, .eig{
+-webkit-text-stroke: 1px  rgb(255, 255, 255);
+-webkit-text-fill-color: transparent;
+position: absolute;
+transform: translate(-50%, 30%);
+transition: 3s ease;
+
+
+}
+.fir, .thir, .fif, .sev{
+position: absolute;
+transform: translate(-50%, -40%);
+transition: 3s ease;
+}
+.im{
+position: absolute;
+width: 40%;
+height: 70%;
+top: 80px;
+left: 60%;
+}
+.im img{
+width: 70%;
+transform: rotate(20deg) translateY(-70px);
+filter: drop-shadow(10px 10px 40px black);
+z-index: 1;
+position: absolute;
+transition: 3s ease;
+}
+.imga1, .imga2, .imga3, .imga4{
+transition: 3s ease;
+}
+.imga2{
+width: 80%;
+height: 130%;
+}
+.mainbar{
+width: 70%;
+height: 100%;
+}
+.topbaro{
+width: 100%;
+height: 10%;
+display: flex;
+align-items: center;
+}
+.topbaro img{
+height: 100%;
+}
+.topbaro li{
+    list-style: none;
+}
+.topbaro li a{
+    text-decoration: none;
+    color: white;
+}
+.spon{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;}
+.spon h1{
+    font-size: 50px;
+}
+.contento{
+width: 100%;
+height: 60%;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+}
+.changer{
+width: 100%;
+height: 30%;
+}
+.topbaro ul{
+display: flex;
+}
+.topbaro li{
+margin-left: 50px;
+list-style: none;
+color: white;
+font-size: 1.2rem;
+}
+.one{
+letter-spacing: 0.1rem;
+margin-left: 5%;
+color: rgb(98, 165, 154);
+margin-top: 5%;
+
+
+}
+.two{
+letter-spacing: 0.1rem;
+margin-left: 5%;
+color: rgb(255, 255, 255);
+font-size: 5rem;
+font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.two span{
+font-weight: 1;
+}
+.order{
+width: 100%;
+height: 15%;
+display: flex;
+margin-top: 52px;
+}
+button{
+display: flex;
+width: 17%;
+justify-content: space-evenly;
+align-items: center;
+border-radius: 30px;
+height: 90%;
+}
+.b1{
+color: white;
+background-color: #0dcea8;
+margin-left: 5%;
+
+}
+.b2{
+margin-left: 2%;
+}
+.changer{
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.i1, .i2, .i3, .i4{
+width: 20%;
+height: 100%;
+display: flex;
+align-items: flex-start;
+justify-content: center;
+border-radius: 20px;
+transition: 0.5s ease;
+cursor: pointer;
+}
+.i1, .i3, .i4{
+opacity: 0.4;
+}
+.i1 img{
+width: 50%;
+height: 70%;
+}
+.i2 img{
+width:40%;
+height: 70%;
+
+}
+.i3 img{
+width:50%;
+height: 70%;
+
+}
+.i4 img{
+width:100%;
+height: 100%;
+transform: translateY(-30px);
+z-index: 0;
+}
+.imga1, .imga3, .imga4{
+top: -150%;
+}
+
+.thir, .fif, .sev{
+transform: translateX(200%);
+
+}
+.fou, .six, .eig{
+transform: translateX(-200%);
+}   
+
+body.switch {
+    color: black;
+    background: radial-gradient(rgb(255, 255, 255), rgb(132, 165, 241));
+    
+}
+
+.topbar {
+    display: flex;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s ease;
+}
+.topbar.switch{
+    color: black;
+}
+
+.addr {
+    float: left;
+    width: 50%;
+    margin-left: 10px;
+}
+
+.cont {
+    float: left;
+    width: 50%;
+    margin-right: 10px;
+}
+
+.cont p {
+    float: right;
+}
+
+.header {
+    background: rgb(255, 255, 255, 0.2);
+    margin-top: 20px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    width: 99%;
+    position: sticky;
+    z-index: 999;
+    top: -1px;
+    transition: 0.5s ease;
+}
+.header.switch{
+    background: rgba(52, 52, 52, 0.2);
+
+}
+
+.header .logo {
+    margin-left: 20px;
+    color: rgb(204, 198, 198);
+
+}
+.logo.switch{
+    color: black;
+}
+
+.header .logo h1 {
+    font-size: 60px;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+
+.header li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.header li {
+    padding: 20px;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    transition: 0.5s;
+}
+
+.header:hover::before {
+    left: 100%;
+    width: 0%;
+
+}
+
+.modeswitch {
+    width: 3.5rem;
+    height: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 67%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+.switcher {
+    width: 40%;
+    height: 90%;
+    background-color: black;
+    margin-left: 2%;
+    border-radius: 50%;
+    margin-right: 2%;
+    transition: 0.5s ease;
+}
+
+.switcher.switch {
+    transform: translatex(30px);
+    background-color: white;
+
+}
+
+.modeswitch.switch {
+    background-color: rgb(249, 249, 167);
+}
+
+.home {
+    height: 520px;
+    width: 99%;
+    margin-top: 50px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    transition: 0.5s ease;
+}
+.home.switch{
+   color: #171817;
+}
+
+.home .homeleft {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.home .homeleft .homeleftup {
+    display: flex;
+    justify-content: center;
+
+}
+
+.homeleft .hlone {
+    background: rgba(255, 255, 255, 0.173);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    backdrop-filter: blur(70px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    margin-right: 25px;
+    box-shadow: 3px 0px 10px black;
+    overflow: hidden;
+    align-items: center;
+    transition: 0.4s ease;
+
+}
+
+
+.homeleft .hltwo {
+    background: rgba(255, 255, 255, 0.173);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    backdrop-filter: blur(70px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    margin-left: 25px;
+    box-shadow: 3px 0px 10px black;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+.home .homeleft .homeleftdown {
+    display: flex;
+    justify-content: center;
+}
+
+.homeleft .hlthree {
+    background: rgba(255, 255, 255, 0.173);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    backdrop-filter: blur(70px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    margin-left: 10px;
+    margin-top: 10px;
+    box-shadow: 3px 0px 10px black;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+.hlone img {
+    width: 300px;
+    height: 300px;
+
+    filter: drop-shadow(10px solid black);
+
+}
+
+.hltwo img {
+    width: 400px;
+    height: 350px;
+
+    filter: drop-shadow(10px solid black);
+
+}
+
+.hlthree img {
+    width: 340px;
+    height: 250px;
+
+
+}
+
+.homeleft .hlone:hover {
+    transform: translateY(10px);
+}
+
+.home .homeright {
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.home .homeright img {
+    opacity: 0.3;
+    height: 600px;
+}
+
+.quote {
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Croissant One', cursive;
+    transition: 0.5s ease;
+
+
+}
+.quote.switch{
+    color: black;
+    transition: 0.5s ease;
+}
+
+.names {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+.names h1 {
+    font-size: 60px;
+    font-family: 'Croissant One', cursive;
+
+}
+
+.maincard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    padding-top: 70px;
+    border-radius: 30px;
+    padding-bottom: 70px;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    transition-delay: 0.5s;
+}
+
+.card:hover {
+    width: 600px;
+    transition-delay: 0.5s ease;
+}
+
+.card .circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+}
+
+.card .circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 350px;
+    width: 350px;
+    background: #191919;
+    border: 8px solid var(--clr);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 60px var(--clr))
+}
+
+.card:hover .circle::before {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: var(--clr);
+    transition-delay: 0.5s;
+    transition: 0.5s ease;
+
+}
+
+.card .circle .logos {
+    position: relative;
+    width: 250px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card:hover .circle .logos {
+    transform: scale(0);
+    transition-delay: 0s;
+}
+
+.card .product_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) rotate(315deg);
+    height: 400px;
+    transition: 0.5s ease-in-out;
+    filter: drop-shadow(5px 5px 10px rgb(39, 39, 39));
+}
+
+.card:hover .product_img {
+    top: 25%;
+    left: 72%;
+    transform: translate(-50%, -50%) scale(1) rotate(15deg);
+    transition-delay: 0.75s;
+
+
+}
+
+.card .content {
+    position: absolute;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.card:hover .content {
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+}
+
+.card .content h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+}
+
+.card .content p {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.card .content a {
+    position: relative;
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container .cards {
+    width: 400px;
+    height: 500px;
+    margin: 30px;
+    background: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container .cards img {
+    width: 150px;
+    filter: drop-shadow(30px 30px 20px #171817);
+    transition: 0.8s ease;
+    transform: translateX(80px);
+}
+
+.cards .content .head {
+    position: absolute;
+    top: 0;
+    margin-top: 30px;
+    left: 0;
+    background-color: var(--bcg);
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 20px;
+    padding-right: 40px;
+    transform: translateX(-300px);
+    transition: 0.8s ease;
+
+}
+
+.cards:hover .content .head {
+    transform: translateX(-30px);
+}
+
+.cards .content .head h1 {
+    font-size: 50px;
+}
+
+.cards:hover img {
+    scale: 40%;
+    transform: translate(500px, -150px);
+}
+
+.cards .content .quotes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    transform: translateX(-400px) translateY(-70px);
+    visibility: hidden;
+    transition: 0.5s ease;
+}
+
+.cards .content .quotes span {
+    color: white;
+}
+
+
+.cards:hover .content .quotes {
+    transform: translateX(-140px) translateY(-70px);
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.cards .content .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    transition: 0.8s ease;
+    transition-delay: 0.3s;
+    margin-top: 50px;
+
+}
+
+.cards .content .description p {
+    margin-left: 30px;
+    margin-right: 30px;
+    transform: translate(-600px, 0px);
+    transition: 0.5s ease;
+
+}
+
+.cards:hover .content .description p {
+    transform: translate(-200px, 0px);
+}
+
+.cards #papercon .description p {
+    margin-left: 30px;
+    margin-right: 30px;
+    transform: translate(-600px, 0px);
+    transition: 0.5s ease;
+}
+
+.cards:hover #papercon .description p {
+    transform: translate(-180px, 0px);
+}
+
+.container #cardthree img {
+    margin-right: 60px;
+}
+
+.container #cardthree .description p {
+    transform: translate(-800px, 0px);
+}
+
+.container #cardthree:hover .description p {
+    transform: translate(-260px, 0px);
+}
+
+.container #cardthree .quote h2 {
+    transform: translateX(-300px);
+}
+
+.foodhead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+.foodhead h1 {
+    font-size: 60px;
+    font-family: 'Croissant One', cursive;
+
+}
+
+.food {
+    width: 100%;
+    height: 700px;
+    margin-top: 20px;
+}
+
+.food .pizzabcg {
+    position: absolute;
+    top: 3900px;
+    left: -200px;
+    opacity: 0.3;
+    transition: 0.5 ease;
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+}
+
+.food .friesbcg {
+    position: absolute;
+    width: 518px;
+    top: 4300px;
+    left: 1200px;
+    opacity: 0.3;
+    transition: 0.5 ease;
+    animation-name: rotatereverse;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotatereverse {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.food .foodcards {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.food .foodcards .pizzacard {
+    width: 25%;
+    height: 500px;
+    background: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+.food .foodcards .burgercard {
+    width: 25%;
+    height: 500px;
+    background: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+.food .foodcards .friescard {
+    width: 25%;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+.pizzacard .pizzaimg {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pizzacard .pizzaimg img {
+    width: 70%;
+    transition: 0.5s ease;
+}
+
+.foodtitle {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foodtitle h1 {
+    font-size: 70px;
+}
+
+.burgercard .burgerimg {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burgercard .burgerimg img {
+    width: 70%;
+    transition: 0.5s ease;
+
+}
+
+.friescard .friesimg {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friescard .friesimg img {
+    width: 70%;
+    transition: 0.5s ease;
+
+}
+
+.pizzacard:hover .pizzaimg img {
+    transform: scale(1.1);
+}
+
+.burgercard:hover .burgerimg img {
+    transform: scale(1.1);
+}
+
+.friescard:hover .friesimg img {
+    transform: scale(1.1);
+}
+
+.pizzacard.activepizza {
+    transform: translateX(500px);
+}
+
+.burgercard.activepizza {
+    transform: translateX(1000px);
+}
+
+.friescard.activepizza {
+    transform: translateX(500px);
+}
+
+.pizzacard.activeburger {
+    transform: translateX(-500px);
+}
+
+.friescard.activeburger {
+    transform: translateX(500px);
+}
+
+.pizzacard.activefries {
+    transform: translateX(-500px);
+}
+
+.burgercard.activefries {
+    transform: translateX(-1000px);
+}
+
+.friescard.activefries {
+    transform: translateX(-500px);
+}
+
+.fooditems {
+    width: 100%;
+    height: 600px;
+    background: rgba(141, 136, 136, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fooditems .pizzaitems {
+    width: 25%;
+    height: 500px;
+    background: rgba(177, 225, 242, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+.pizzaitemsimg {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pizzaitemsimg img {
+    width: 80%;
+    transition: 0.5s ease;
+}
+
+.pizzaitemsname {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainfooditemspizza {
+    transform: translateX(-1600px);
+    transition: 0.5s ease;
+    position: absolute;
+}
+
+.mainfooditemspizza.activepizza {
+    transform: translateX(0px);
+}
+
+
+
+
+.fooditems .burgeritems {
+    width: 25%;
+    height: 500px;
+    background: rgba(177, 225, 242, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+.burgeritemsimg {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(30px 30px 30px black);
+}
+
+.burgeritemsimg img {
+    width: 80%;
+    transition: 0.5s ease;
+}
+
+.burgeritemsname {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainfooditemsburger {
+    transition: 0.5s ease;
+    position: absolute;
+    display: none;
+}
+
+.burgeritems:hover img {
+    transform: scale(1.1);
+}
+
+.pizzaitems:hover img {
+    transform: scale(1.1);
+}
+
+.mainfooditemsburger.activeburger {
+    display: block;
+}
+
+
+.fooditems .friesitems {
+    width: 25%;
+    height: 500px;
+    background: rgba(177, 225, 242, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+.friesitemsimg {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friesitemsimg img {
+    width: 80%;
+    transition: 0.5s ease;
+}
+
+.friesitemsname {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainfooditemsfries {
+    transform: translateX(-1600px);
+    transition: 0.5s ease;
+    position: absolute;
+}
+
+.mainfooditemsfries.activefries {
+    transform: translateX(0px);
+}
+
+.cafeteria {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+/* starbucks section starts */
+.mainbanner {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.starbucks-banner {
+    width: 90%;
+    height: 600px;
+    background: rgba(197, 211, 216, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.bannerlogo {
+    width: 100%;
+    height: 20%;
+}
+
+.bannercontent {
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+
+.bannerlogo img {
+    height: 100%;
+}
+
+.bctext {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bcimg {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.bcimg img {
+
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    transition: 0.5s ease;
+}
+
+.starbucks-banner .greenstar {
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    transition: 0.5s ease;
+}
+
+.bctext h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+
+}
+
+.bctext p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+.bctext h1 span {
+    color: rgb(52, 121, 52);
+    font-size: 160%;
+}
+
+.starbucks-banner .decogreen {
+    position: absolute;
+    height: 1000px;
+    width: 1000px;
+    border-radius: 50%;
+    left: 0%;
+    top: 30%;
+    transform: translateX(800px);
+    background: rgba(1, 255, 132, 0.256);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    z-index: 0;
+    transition: 0.5s ease;
+    transition-delay: 0.5s;
+}
+
+.starbucks-banner .pinkstar {
+    transform: translatex(160%);
+    transition: 0.5s ease;
+}
+
+.starbucks-banner .yellowstar {
+    transform:  rotate(-20deg);
+    transition: 0.5s ease;
+    transform: translatex(160%);
+
+
+
+}
+
+.starbucks-banner .decopink {
+    position: absolute;
+    height: 1000px;
+    width: 1000px;
+    border-radius: 50%;
+    left: 50%;
+    top: 30%;
+    transform: translateX(800px);
+    background: rgba(242, 110, 176, 0.211);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    z-index: 0;
+    transition: 0.5s ease;
+    transition-delay: 0.5s;
+}
+
+.starbucks-banner .decoyellow {
+    position: absolute;
+    height: 1000px;
+    width: 1000px;
+    border-radius: 50%;
+    left: 50%;
+    top: 30%;
+    transform: translateX(800px);
+    background: rgba(255, 255, 0, 0.24);
+    backdrop-filter: blur(50px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    z-index: 0;
+    transition: 0.5s ease;
+    transition-delay: 0.5s;
+}
+
+.starbucks-banner .change {
+    width: 8%;
+    height: 100%;
+    position: absolute;
+    left: 92%;
+    top: 0%;
+}
+
+.starbucks-banner .green,
+.starbucks-banner .pink,
+.starbucks-banner .yellow {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+    border-radius: 20px;
+
+}
+
+.starbucks-banner .green {
+    box-shadow: inset 2px 2px 10px black;
+}
+
+.starbucks-banner .green img {
+    width: 80%;
+}
+
+.starbucks-banner .pink img {
+    width: 100%;
+}
+
+.starbucks-banner .yellow img {
+    width: 100%;
+    transform: rotate(-20deg);
+}
+
+/* .starbucks-banner .decogreen.activepink {
+    transform: translateX(700px);
+    transform: translateY(500px);
+    transition: 0.5s ease;
+    transform-origin: center;
+}
+
+.starbucks-banner .greenstar.activepink {
+    left: 100%;
+    transition: 0.5s ease;
+}
+
+.starbucks-banner .decopink.activepink {
+    left: 60%;
+}
+
+.starbucks-banner .pinkstar.activepink {
+    transform: translateX(0px);
+}
+
+.starbucks-banner .green.activepink {
+    transform: translateX(100%);
+}
+
+.starbucks-banner .yellow.activepink {
+    transform: translateX(100%);
+}
+
+.starbucks-banner .pink.activepink {
+    box-shadow: 5px 5px 10px 5px black;
+
+}
+
+.starbucks-banner .decogreen.activeyellow {
+    transform: translateX(700px);
+    transform: translateY(500px);
+    transition: 0.5s ease;
+    transform-origin: center;
+}
+
+.starbucks-banner .decoyellow.activeyellow {
+    left: 60%;
+}
+
+.starbucks-banner .greenstar.activeyellow {
+    left: 100%;
+    transition: 0.5s ease;
+}
+
+.starbucks-banner .yellowstar.activeyellow {
+    transform: translateX(0px) rotate(-15deg);
+}
+
+.starbucks-banner .green.activeyellow {
+    transform: translateX(100%);
+}
+
+.starbucks-banner .pink.activeyellow {
+    transform: translateX(100%);
+}
+
+.starbucks-banner .yellow.activeyellow {
+    box-shadow: 5px 5px 10px 5px black;
+
+} */
+/* starbucks section ends */
+
+.fullcontent {
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fullcontent.slidedown {
+    transform: translateY(1300px);
+}
+
+
+/* dominos banner starts */
+.dominos-banner {
+    width: 90%;
+    height: 600px;
+    background: rgba(197, 211, 216, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.dominos-banner .bannerlogo img {
+    height: 100%;
+    float: right;
+}
+
+.dominos-banner .greenstar {
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    transition: 0.5s ease;
+}
+
+.dominos-banner .pinkstar {
+    transform: translatex(-150%);
+    width: 80%;
+    height: 80%;
+    z-index: 1;
+    position: absolute;
+    transition: 0.5s ease;
+}
+
+.dominos-banner .yellowstar {
+    transform: translatex(-150%);
+    height: 80%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    transition: 0.5s ease;
+}
+
+.dominos-banner .bctext h1 {
+    font-size: 70px;
+    text-align: center;
+
+}
+
+.dominos-banner .bctext h1 span {
+    color: rgb(218, 63, 46);
+    font-size: 160%;
+}
+
+.dominos-banner .decogreen {
+    position: absolute;
+    height: 1000px;
+    width: 1000px;
+    border-radius: 50%;
+    left: 0%;
+    top: 30%;
+    transform: translateX(-500px);
+    background: rgba(255, 1, 1, 0.256);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    z-index: 0;
+    transition: 0.5s ease;
+    transition-delay: 0.5s;  
+    cursor: pointer;
+}
+
+.dominos-banner .decopink {
+    position: absolute;
+    height: 1000px;
+    width: 1000px;
+    border-radius: 50%;
+    left: -100%;
+    top: 30%;
+    transform: translateX(-500px);
+    background: rgba(22, 134, 5, 0.211);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    z-index: 0;
+    transition: 0.5s ease;
+    transition-delay: 0.5s;
+    cursor: pointer;
+}
+
+.dominos-banner .decoyellow {
+    position: absolute;
+    height: 1000px;
+    width: 1000px;
+    border-radius: 50%;
+    left: -100%;
+    top: 30%;
+    transform: translateX(-500px);
+    background: rgba(255, 255, 0, 0.24);
+    backdrop-filter: blur(50px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    z-index: 0;
+    transition: 0.5s ease;
+    transition-delay: 0.5s;
+    cursor: pointer;
+}
+
+.dominos-banner .change {
+    width: 30%;
+    height: 10%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.dominos-banner .green {
+    width: 34%;
+    height: 100%;
+    box-shadow: inset 2px 2px 10px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.dominos-banner .pink {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.dominos-banner .yellow {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.dominos-banner .green img {
+    width: 50%;
+}
+
+.dominos-banner .pink img {
+    width: 50%;
+
+}
+
+.dominos-banner .yellow img {
+    width: 50%;
+    transform: rotate(0deg);
+
+}
+
+/* .dominos-banner .greenstar.activepinkd {
+    left: -100%;
+}
+
+.dominos-banner .pinkstar.activepinkd {
+    transform: translateX(0px);
+}
+
+.dominos-banner .decopink.activepinkd {
+    left: -40%;
+}
+
+.dominos-banner .decogreen.activepinkd {
+    left: -100%;
+}
+
+.dominos-banner .green.activepinkd {
+    transform: translatey(-100px);
+}
+
+.dominos-banner .yellow.activepinkd {
+    transform: translatey(-100px);
+}
+
+.dominos-banner .pink.activepinkd {
+    box-shadow: inset 2px 2px 10px black;
+}
+
+
+
+.dominos-banner .greenstar.activeyellowd {
+    left: -100%;
+}
+
+.dominos-banner .yellowstar.activeyellowd {
+    transform: translateX(0px);
+}
+
+.dominos-banner .decoyellow.activeyellowd {
+    left: -40%;
+}
+
+.dominos-banner .decogreen.activeyellowd {
+    left: -100%;
+}
+
+.dominos-banner .yellow.activeyellowd {
+    box-shadow: inset 2px 2px 10px black;
+
+}
+
+.dominos-banner .green.activeyellowd {
+    transform: translatey(-100px);
+
+}
+
+.dominos-banner .pink.activeyellowd {
+    transform: translatey(-100px);
+
+} */
+/* dominos section ends */
+/* footer section starts */
+.footer{
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.a{
+    margin-left: 50px;
+    width: 20%;
+}
+.a ul{
+    position: relative;
+    transform: skewY(-15deg);
+    
+
+}
+ 
+.a ul li{
+    position: relative;
+    list-style: none;
+    width: 200px;
+    background: #3e3f46;
+    padding: 15px;
+    z-index: var(--i);
+    transition: 0.5s;
+
+}
+.a ul li:hover{
+    background-color: #33a3ee;
+    transform: translateX(50px);
+ }
+
+.a ul li::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    background: #2e3133;
+    left: -40px;
+    transform-origin: right;
+    transform: skewY(45deg);
+    top: 0px;
+    transition: 0.5s;
+
+
+}
+.a ul li:hover::before{
+    background: #1f5378;
+}
+
+.a ul li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: -40px;
+    left: 0px;
+    background: #35383e;
+    transform: skewX(45deg);
+    transform-origin: bottom;
+    transition: 0.5s
+}
+.a ul li:hover::after{
+    background-color: #2982b9;
+}
+
+
+.a ul li a {
+    text-decoration: none;
+    color: #999;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.a ul li:hover a {
+    color: white;
+}
+ 
+.a ul li:last-child::after{
+    box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
+}
+.footcontent{
+    background: rgba(94, 95, 94, 0.211);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footone, .foottwo, .footthree{
+    width: 30%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footone p{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+.social{
+    width: 100%;
+    height: 20%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.5s ease;
+}
+.social i{
+    font-size: 50px;
+}
+.social a:hover{
+    transform: translateY(-10px);
+    transition: 0.5s ease;
+}
+
+.foottwo ul{
+    margin-top: 20px;
+}
+.foottwo ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    
+}
+.foottwo ul li{
+    margin-top: 15px;
+    transition: 0.5s ease;
+}
+.foottwo ul li:hover{
+    letter-spacing: 1.2px;
+    transform: translateX(5px);
+}
+.footthree p {
+     margin-left: 20px;
+     margin-right: 20px;
+     margin-top: 20px;
+     text-align: center;
+}
+.footthree form{
+    background: rgba(94, 95, 94, 0.211);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    width: 80%;
+    height: 40%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.footthree form input{
+    height: 40px;
+}
+.footthree form button{
+    width: 30%;
+    height: 20%;
+    margin-top: 10px;
+}
+/* footer section ends */
+/* bar section starts  */
+.bar{
+    width: 95%;
+    height: 1200px;
+    background: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.barhead{
+    width: 100%;
+    height: 5%;
+    text-align: center;
+}
+.barhead h1{
+    font-size: 3rem;
+}
+.barstart{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.barcontent{
+    width: 100%;
+    height: 75%;
+}
+.bcup{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bcdown{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bcleft{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bcright{
+    width: 40%;
+    height: 100%;
+    border-radius:50% 50% 0px 0px;
+    border: 2px solid grey;
+    box-shadow: inset 7px  10px 20px rgb(23, 23, 23);
+    transition: 0.5s ease;
+    opacity: 70%;
+}
+.bcright:hover{
+    box-shadow: 10px 10px 10px black;
+    transition: 0.5 ease;
+}
+.bcup .bcright{
+    background-image: url(img/bar1.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.bcdown .bcright{
+    background-image: url(img/bar2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.bcleft p{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.4rem;
+}
+.bgtext{
+    position: absolute;
+    z-index: -1;
+    transform: translateY(250px);
+}
+.bgtext h1{
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 326px;
+    opacity: 10%;
+    
+}
+.bgtexto{
+    position: absolute;
+    z-index: -1;
+    transform: translateY(870px);
+}
+.bgtexto h1{
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 326px;
+    opacity: 10%;
+}
+/* bar section ends */
+/* note section starts */
+.note{
+    width: 90%;
+    height: 300px;
+    background: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.notehead{
+    width: 100%;
+    height: 20%;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.notehead h1{
+    font-size: 2.5rem;
+}
+.notecontent{
+    width: 100%;
+    height: 80%;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notecontent ul li p {
+    font-size: 1.3rem;
+    font-family:cursive;
+}
